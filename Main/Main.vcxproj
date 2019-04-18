@@ -115,11 +115,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="InlineFunc.cpp" />
     <ClCompile Include="_0_Main.cpp" />
     <ClCompile Include="_1_HelloWorld.cpp" />
     <ClCompile Include="_2_Pointer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="InlineFunc.h" />
     <ClInclude Include="_1_HelloWorld.h" />
     <ClInclude Include="_2_Pointer.h" />
   </ItemGroup>

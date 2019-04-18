@@ -54,3 +54,13 @@ void _2_Pointer::PointerMove2()
 	}
 
 }
+
+//当命名为const时，数组内值不可修改，无法++/-- 等操作
+void _2_Pointer::PointerConst(const int intArray[])
+{
+	for (int i = 0; i < 5; i++)
+	{
+		cout << intArray[i] << endl;
+	}
+
+}

@@ -24,12 +24,18 @@
     <ClCompile Include="_0_Main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="InlineFunc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="_1_HelloWorld.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="_2_Pointer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="InlineFunc.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

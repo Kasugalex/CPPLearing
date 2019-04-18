@@ -6,5 +6,6 @@ public:
 	~_2_Pointer();
 	void PointerMove();
 	void PointerMove2();
+	void PointerConst(const int[]);
 };
 
