@@ -2,7 +2,7 @@
 using namespace std;
 #include"_1_HelloWorld.h"
 #include"_2_Pointer.h"
-
+#include"_3_InlineFunc.h"
 double Func(double,double);
 int main() {
 
@@ -14,13 +14,18 @@ int main() {
 	//pointer.PointerMove2();
 	//int intArray[] = { 1,2,3,4,5 };
 	//pointer.PointerConst(intArray);
-	//pointer.Func(2, 1);
-	//函数指针，类似委托
+
+	//委托
 	double (*ptrCalc)(double, double);
 	ptrCalc = Func;
 	ptrCalc(44,22);
 
+	_3_InlineFunc* func = new _3_InlineFunc;
+	double(_3_InlineFunc::*ptrCalc2)(double, double) =  &_3_InlineFunc::Func;
+	
+	(func->*ptrCalc2)(4,2);
 
+	delete func;
 
 	system("pause");
 	return 0;
